@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sudarshan Patole — Cybersecurity project portfolio focused on SOC operations, threat detection, digital forensics and security automation.">
+  <meta name="theme-color" content="#070b12">
+  <title>Sudarshan Patole | Cybersecurity Project Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sudarshan Patole home">
+      <span class="brand-mark">&gt;_</span>
+      <span>SP<span class="accent">/</span>SEC</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#competitions">CTFs</a>
+      <a href="#learning">Labs</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#research">Research</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> SECURITY PROJECT HUB</div>
+        <h1>Building, investigating,<br><span class="gradient-text">defending.</span></h1>
+        <p class="hero-lead">
+          I’m <strong>Sudarshan Patole</strong>, a cybersecurity enthusiast focused on
+          Security Operations, threat detection and digital forensics.
+        </p>
+        <p class="hero-sub">
+          This site is a working record of the labs, investigations, automation tools and
+          security challenges I use to turn cybersecurity concepts into practical skills.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore projects <span>↓</span></a>
+          <a class="btn btn-ghost" href="https://github.com/SudarshanPatole9994" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/sudarshan-patole-3574a6263" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="terminal-card reveal delay-1" aria-label="Cybersecurity focus terminal">
+        <div class="terminal-top">
+          <div class="terminal-dots"><i></i><i></i><i></i></div>
+          <span>~/security-profile</span>
+          <span class="terminal-status">● online</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="terminal-output">sudarshan@security-lab</p>
+          <p><span class="prompt">$</span> focus --current</p>
+          <p class="terminal-output">SOC · Threat Detection · Digital Forensics</p>
+          <p><span class="prompt">$</span> build --next</p>
+          <p class="terminal-output">Detection workflows + security automation</p>
+          <p><span class="prompt">$</span> status</p>
+          <p class="terminal-output"><span class="ok">learning_by_doing: true</span></p>
+          <span class="cursor"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">ABOUT THE BUILDER</p>
+          <h2>Curious about how attacks become <span class="accent">evidence.</span></h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="large-copy">
+            I’m developing toward a career in <strong>SOC and security operations</strong>,
+            with a particular interest in the point where logs, indicators, investigation
+            and analyst decisions come together.
+          </p>
+          <p>
+            Instead of treating cybersecurity as a list of technologies to memorize, I prefer
+            practical work: taking a suspicious email apart, generating events in a lab,
+            searching telemetry, writing a detection, or automating repetitive IOC lookups.
+          </p>
+          <p>
+            My current learning path combines hands-on labs, CTF problem solving, security
+            projects and technical writing. The goal is to keep building the investigation
+            mindset and technical foundations needed for real security operations.
+          </p>
+        </div>
+        <div class="focus-panel reveal delay-1">
+          <div class="panel-label">CURRENT FOCUS</div>
+          <div class="focus-item"><span>01</span><div><strong>Security Operations</strong><small>Monitoring · triage · investigation</small></div></div>
+          <div class="focus-item"><span>02</span><div><strong>Threat Detection</strong><small>Windows telemetry · SIEM · detection logic</small></div></div>
+          <div class="focus-item"><span>03</span><div><strong>Digital Forensics</strong><small>Evidence · analysis · incident context</small></div></div>
+          <div class="focus-item"><span>04</span><div><strong>Security Automation</strong><small>Python · APIs · IOC enrichment</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading reveal">
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">PROJECTS / CASE STUDIES</p>
+          <h2>Proof through <span class="accent">practical work.</span></h2>
+        </div>
+      </div>
+      <p class="section-intro reveal">
+        These are not just project titles. Open a case study to see the objective, approach,
+        tooling, skills developed, outcome and evidence trail.
+      </p>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-project="phishing">
+          <div class="card-top"><span class="project-index">01</span><span class="tag">THREAT INTELLIGENCE</span></div>
+          <div class="project-icon">⌁</div>
+          <h3>Phishing Email Investigation<br>&amp; IOC Analysis</h3>
+          <p>Investigating a simulated employee-reported phishing email from headers and infrastructure through IOC extraction and threat-intelligence checks.</p>
+          <div class="tech-row"><span>Email Headers</span><span>VirusTotal</span><span>CyberChef</span></div>
+          <button class="text-link" data-open="phishing">Open case study <span>→</span></button>
+        </article>
+
+        <article class="project-card reveal delay-1" data-project="soc">
+          <div class="card-top"><span class="project-index">02</span><span class="tag">SOC / SIEM</span></div>
+          <div class="project-icon">◈</div>
+          <h3>Mini SOC Lab<br>for Threat Detection</h3>
+          <p>A home lab for generating Windows security events, collecting telemetry, investigating suspicious PowerShell activity and creating a basic detection.</p>
+          <div class="tech-row"><span>Windows</span><span>Sysmon</span><span>Splunk</span></div>
+          <button class="text-link" data-open="soc">Open case study <span>→</span></button>
+        </article>
+
+        <article class="project-card reveal delay-2" data-project="ioc">
+          <div class="card-top"><span class="project-index">03</span><span class="tag">SECURITY AUTOMATION</span></div>
+          <div class="project-icon">⌘</div>
+          <h3>Python IOC<br>Enrichment Tool</h3>
+          <p>A proof-of-concept analyst utility that accepts an indicator and uses a threat-intelligence API to return useful enrichment data.</p>
+          <div class="tech-row"><span>Python</span><span>REST API</span><span>JSON</span></div>
+          <button class="text-link" data-open="ioc">Open case study <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section id="competitions" class="section split-section">
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">COMPETITIONS</p>
+          <h2>Security problems under <span class="accent">pressure.</span></h2>
+        </div>
+      </div>
+      <div class="competition-card reveal">
+        <div class="competition-score">
+          <span class="score">17<span>/23</span></span>
+          <small>FLAGS CAPTURED</small>
+        </div>
+        <div class="competition-main">
+          <div class="card-top"><span class="tag">CTF</span><span class="muted">CISCO × NFSU</span></div>
+          <h3>CISCO X NFSU Cybersecurity CTF</h3>
+          <p>
+            Participated in a mixed cybersecurity challenge environment requiring systematic
+            analysis of unfamiliar problems and quick movement between different security domains.
+          </p>
+          <div class="challenge-list">
+            <span>Web Security</span><span>OSINT</span><span>Network Analysis</span><span>Cryptography</span>
+          </div>
+          <div class="learning-note"><strong>What it developed:</strong> structured problem solving, time-pressure analysis and the ability to break unfamiliar security challenges into smaller, testable steps.</div>
+        </div>
+        <div class="evidence-box">
+          <span class="evidence-label">EVIDENCE</span>
+          <a href="#" class="placeholder-link" data-placeholder="Add your CTF certificate URL">Certificate <span>↗</span></a>
+          <a href="#" class="placeholder-link" data-placeholder="Add your leaderboard/results screenshot URL">Leaderboard / results <span>↗</span></a>
+          <a href="#" class="placeholder-link" data-placeholder="Add selected challenge write-up URL">Challenge write-ups <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="section learning-section">
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <div>
+          <p class="eyebrow">PRACTICAL LEARNING</p>
+          <h2>Labs are practice, not <span class="accent">certificates.</span></h2>
+        </div>
+      </div>
+      <div class="learning-grid">
+        <div class="lab-counter reveal">
+          <span class="counter-number">25<span>+</span></span>
+          <span class="counter-label">TRYHACKME<br>ROOMS / LABS</span>
+          <a class="btn btn-primary small" href="https://tryhackme.com/p/dpatole51" target="_blank" rel="noopener">View profile ↗</a>
+        </div>
+        <div class="lab-content reveal delay-1">
+          <p class="large-copy">Hands-on practice across the building blocks of security operations.</p>
+          <div class="skill-cloud">
+            <span>SOC Fundamentals</span><span>Networking</span><span>Linux</span><span>Windows</span>
+            <span>Web Security</span><span>Digital Forensics</span><span>Threat Detection</span>
+          </div>
+          <p class="muted-copy">I use practical labs to reinforce concepts through investigation, enumeration, analysis and problem solving rather than relying only on theoretical study.</p>
+          <div class="evidence-inline">
+            <a href="https://tryhackme.com/p/dpatole51" target="_blank" rel="noopener">TryHackMe profile ↗</a>
+            <a href="#" class="placeholder-link" data-placeholder="Add selected TryHackMe write-up URL">Selected write-ups ↗</a>
+            <a href="#" class="placeholder-link" data-placeholder="Add screenshot URL or local image later">Lab evidence ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section certifications-section">
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <div>
+          <p class="eyebrow">CERTIFICATION</p>
+          <h2>Structured foundations, backed by <span class="accent">learning.</span></h2>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-mark">CC</div>
+        <div class="cert-info">
+          <span class="tag">CLOUD + IT FOUNDATIONS</span>
+          <h3>Masters in Cloud Computing</h3>
+          <p>Completed a structured cloud-computing program to strengthen the infrastructure and security foundations that support cybersecurity work.</p>
+          <div class="cert-topics"><span>Networking Configuration</span><span>CCNA &amp; Linux</span><span>AWS &amp; Azure</span><span>Python &amp; Bash</span><span>OS Security</span></div>
+        </div>
+        <div class="cert-why">
+          <strong>Why I completed it</strong>
+          <p>To build a broader technical foundation across networking, cloud, scripting and operating-system security.</p>
+          <a href="#" class="placeholder-link" data-placeholder="Add your certificate URL">Certificate ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section research-section">
+      <div class="section-heading reveal">
+        <span class="section-number">06</span>
+        <div>
+          <p class="eyebrow">RESEARCH / WRITING</p>
+          <h2>Learning to explain the <span class="accent">security problem.</span></h2>
+        </div>
+      </div>
+      <div class="research-card reveal">
+        <div class="research-number">R</div>
+        <div>
+          <span class="tag">TECHNICAL WRITING</span>
+          <h3>Cybersecurity Research Article</h3>
+          <p>Published an article/research paper exploring a cybersecurity topic and its practical security implications for organisations.</p>
+          <div class="research-skills"><span>Security Research</span><span>Technical Analysis</span><span>Technical Writing</span><span>Communication</span></div>
+        </div>
+        <a href="#" class="btn btn-ghost placeholder-link" data-placeholder="Add your published paper URL">Read paper ↗</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">07 / CONTACT</p>
+        <h2>Let’s talk about <span class="gradient-text">security.</span></h2>
+        <p>For opportunities, collaboration, technical discussions or project feedback.</p>
+        <div class="contact-links">
+          <a href="mailto:dpatole51@gmail.com"><span>EMAIL</span><strong>dpatole51@gmail.com</strong>↗</a>
+          <a href="https://github.com/SudarshanPatole9994" target="_blank" rel="noopener"><span>GITHUB</span><strong>SudarshanPatole9994</strong>↗</a>
+          <a href="https://www.linkedin.com/in/sudarshan-patole-3574a6263" target="_blank" rel="noopener"><span>LINKEDIN</span><strong>Sudarshan Patole</strong>↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Sudarshan Patole</span>
+    <span>Built as a project hub · Static HTML/CSS/JS</span>
+  </footer>
+
+  <!-- Project detail modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close project case study">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
